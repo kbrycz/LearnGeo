@@ -16,6 +16,7 @@
 		F6CD8B8F2A5A4E55005F26F6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD8B8D2A5A4E55005F26F6 /* MenuView.swift */; };
 		F6CD8B902A5A4E55005F26F6 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD8B8B2A5A4E55005F26F6 /* BaseView.swift */; };
 		F6CD8B912A5A4E55005F26F6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD8B8C2A5A4E55005F26F6 /* SettingsView.swift */; };
+		F6CD8B982A5A578F005F26F6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CD8B972A5A578F005F26F6 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F6CD8B8B2A5A4E55005F26F6 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		F6CD8B8C2A5A4E55005F26F6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F6CD8B8D2A5A4E55005F26F6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F6CD8B972A5A578F005F26F6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		F6CD8B932A5A4E7D005F26F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6CD8B992A5A57C0005F26F6 /* Components */,
 				F6CD8B8B2A5A4E55005F26F6 /* BaseView.swift */,
 				F6CD8B8D2A5A4E55005F26F6 /* MenuView.swift */,
 				F6CD8B8A2A5A4E55005F26F6 /* PlayView.swift */,
@@ -129,6 +132,14 @@
 				F6CD8B792A5A4DB2005F26F6 /* MainView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F6CD8B992A5A57C0005F26F6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F6CD8B972A5A578F005F26F6 /* CustomButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 				F6CD8B8F2A5A4E55005F26F6 /* MenuView.swift in Sources */,
 				F6CD8B902A5A4E55005F26F6 /* BaseView.swift in Sources */,
 				F6CD8B912A5A4E55005F26F6 /* SettingsView.swift in Sources */,
+				F6CD8B982A5A578F005F26F6 /* CustomButton.swift in Sources */,
 				F6CD8B7A2A5A4DB2005F26F6 /* MainView.swift in Sources */,
 				F6CD8B782A5A4DB2005F26F6 /* LearnGeoApp.swift in Sources */,
 			);

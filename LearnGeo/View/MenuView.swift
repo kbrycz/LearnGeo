@@ -5,6 +5,7 @@
 //  Created by Karl Brycz on 7/8/23.
 //
 
+// MenuView.swift
 import SwiftUI
 
 struct MenuView: View {
@@ -12,24 +13,37 @@ struct MenuView: View {
 
     var body: some View {
         BaseView {
-            VStack(spacing: 20) {
-                Text("Hello, world!")
-                    .font(.largeTitle)
-
-                Text("This is a subtitle")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                
-                VStack(spacing: 20) {
-                    Button("Button 1") {
-                        selection = 1
+            GeometryReader { geometry in
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        VStack(spacing: 20) {
+                            Text("Learn Geography!")
+                                .font(.custom("Avenir Next", size: geometry.size.width * 0.06)) // Use the "Avenir Next" font
+                                .bold()
+                            
+                            Text("Augmented Reality learning on Apple Vision Pro.")
+                                .font(.custom("Avenir Next", size: geometry.size.width * 0.025)) // Use the "Avenir Next" font
+                                .foregroundColor(.secondary)
+                            
+                            Image("globe")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: geometry.size.width * 0.8) // Adjust the image width based on the screen width
+                            
+                            VStack(spacing: 20) {
+                                CustomButton(title: "Ready", action: { selection = 1 }, isProminent: true, width: geometry.size.width)
+                                CustomButton(title: "Settings", action: { selection = 2 }, isProminent: false, width: geometry.size.width)
+                            }
+                            Spacer()
+                            Text("v1.0.0 Clash Platforms")
+                                .font(.custom("Avenir Next", size: geometry.size.width * 0.016)) // Use the "Avenir Next" font
+                                .foregroundColor(.secondary)
+                        }
+                        Spacer()
                     }
-                    .buttonStyle(.bordered)
-
-                    Button("Button 2") {
-                        selection = 2
-                    }
-                    .buttonStyle(.bordered)
+                    Spacer()
                 }
             }
         }
@@ -38,4 +52,5 @@ struct MenuView: View {
 
 #Preview {
     MenuView(selection: .constant(0))
+        .glassBackgroundEffect()
 }
